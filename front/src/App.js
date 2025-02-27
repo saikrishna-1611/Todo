@@ -11,8 +11,9 @@ import TaskList from "./Components/Task/TaskList.jsx";
 const Layout = () => (
   <>
     <Navbar />
-    <TaskList/>
     <Outlet /> 
+    <TaskList/>
+   
   </>
 );
 

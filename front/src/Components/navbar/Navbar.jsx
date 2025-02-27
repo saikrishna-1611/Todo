@@ -92,11 +92,7 @@ export const Navbar = () => {
                   Login
                 </Link>
               </li>
-              <li className="nav-item mx-2">
-                <Link className="nav-link active btn-nav" to="/logout">
-                  Logout
-                </Link>
-              </li>
+
               <li className="nav-item">
                 <Link className="nav-link active" to="#">
                   <img

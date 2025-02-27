@@ -1,27 +1,35 @@
+
 import React, { useState } from "react";
 import "./Task.css";
 import { createTask } from "../../api";
+
 const Task = ({ onTaskSubmit }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("medium");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!title.trim() || !description.trim()) return;
 
-    // Send the new task to TaskList
-    onTaskSubmit({ title, description, priority });
+    try {
+      const newTask = await createTask({ title, description, priority });
 
-    // Reset form fields
-    setTitle("");
-    setDescription("");
-    setPriority("medium");
+      // Send new task to TaskList
+      onTaskSubmit(newTask);
+
+      // Reset form fields
+      setTitle("");
+      setDescription("");
+      setPriority("medium");
+    } catch (error) {
+      console.error("Error creating task:", error);
+    }
   };
 
   return (
     <div className="task-form-container">
-      <h2>Add a Task</h2>
+      <h2 style={{ color: "white" }}>Add a Task</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

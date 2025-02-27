@@ -1,71 +1,58 @@
-.task-form-container {
-    max-width: 450px;
-    margin: 30px auto;
+
+  .task-form-container {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
     padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
     text-align: center;
+    color: white;
   }
   
-  h2 {
-    margin-bottom: 15px;
-    color: #333;
+  .task-form-container h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
   }
   
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  input,
-  textarea {
+  .task-form-container input,
+  .task-form-container textarea {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
     border-radius: 6px;
-    outline: none;
-    transition: border 0.3s;
+    font-size: 14px;
   }
   
-  input:focus,
-  textarea:focus {
-    border-color: #007bff;
-  }
-  
-  textarea {
-    height: 80px;
+  .task-form-container textarea {
     resize: none;
+    height: 60px;
   }
   
   .priority-options {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background: #f9f9f9;
+    margin: 10px 0;
   }
   
   .priority-options label {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
     cursor: pointer;
   }
   
-  button {
-    background: #007bff;
+  .task-form-container button {
+    background: #ff7eb3;
     color: white;
-    padding: 12px;
-    font-size: 16px;
     border: none;
+    padding: 8px 14px;
     border-radius: 6px;
     cursor: pointer;
+    font-size: 14px;
     transition: background 0.3s;
   }
   
-  button:hover {
-    background: #0056b3;
+  .task-form-container button:hover {
+    background: #ff5683;
   }
+  

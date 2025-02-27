@@ -18,7 +18,6 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await registerUser(formData);
-  
       if (response && response.status === 201) {
         alert("Registration successful");
         navigate("/signin");
@@ -26,7 +25,7 @@ const Signup = () => {
         alert("Unexpected error: " + response?.statusText);
       }
     } catch (error) {
-      console.error("Error:", error); // Debugging line
+      console.error("Error:", error); 
       alert("Registration failed: " + (error.response?.data?.message || error.message));
     }
   };
@@ -57,3 +56,4 @@ const Signup = () => {
 };
 
 export default Signup;
+
