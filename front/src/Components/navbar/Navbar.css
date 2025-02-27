@@ -1,0 +1,14 @@
+.src-img{
+    width: 30px;
+    height: 30px;
+}
+.navbar-brand{
+    color: rgb(129, 56, 112);
+    font-weight: bold;
+}
+.btn-nav{
+    background-color: rgb(201, 88, 173);
+    border-radius: 10px;
+    font-weight: bold;
+    color: white!important
+}
