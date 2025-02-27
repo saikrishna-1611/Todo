@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import taskModel from "./taskmodel";
+import taskModel from "./taskmodel.js";
 const userSchema= new mongoose.Schema({
     name:{type:String,required:true},
     email:{

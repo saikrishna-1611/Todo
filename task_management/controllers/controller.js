@@ -7,7 +7,7 @@ import jwt from "jsonwebtoken";
 export const register= async(req,res)=>{
     try{
       const{name,email,password}=req.body;
-      if(!name||!phoneNumber||!email||!password){
+      if(!name||!email||!password){
         return res.status(400).json({message:"All feilds are required"})
       }
       const existingUser= await UserModel.findOne({email});

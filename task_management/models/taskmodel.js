@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import UserModel from "./usermodel";
+import UserModel from "./usermodel.js";
 
 const taskSchema=new mongoose.Schema({
     name:{type:mongoose.Schema.Types.ObjectId,ref:'UserModel',required:true},
