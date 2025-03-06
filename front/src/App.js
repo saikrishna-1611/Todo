@@ -7,13 +7,13 @@ import { Home } from "./Components/Home/Home.jsx";
 import { About } from "./Components/About/About.jsx";
 import Navbar from "./Components/navbar/Navbar.jsx";
 import TaskList from "./Components/Task/TaskList.jsx";
-
+import { ToastContainer } from "react-toastify";
 const Layout = () => (
   <>
     <Navbar />
     <Outlet /> 
-    <TaskList/>
-   
+    {/* <TaskList/> */}
+    <ToastContainer />
   </>
 );
 
@@ -26,6 +26,7 @@ const App = () => {
           <Route path="signin" element={<SignIn />} />
           <Route path="signup" element={<Signup />} />
           <Route path="about-us" element={<About />} />
+          <Route path="tasks" element={<TaskList/>}/>
         </Route>
       </Routes>
     </Router>

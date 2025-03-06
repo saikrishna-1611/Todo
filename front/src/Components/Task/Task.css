@@ -55,4 +55,8 @@
   .task-form-container button:hover {
     background: #ff5683;
   }
-  
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
